@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&family=Satisfy&family=Source+Serif+4:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Mono:wght@200&family=Special+Elite&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+.brand-title{
+    font-family:'Special Elite' ;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(5, 45, 89);
+    color: wheat;
+}
+
+#coveri{
+    width: 100%;
+    height: 55vh;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(253, 194, 54);
+    color: rgb(5, 45, 89);
+    padding: 0px;
+    margin-top: .5rem;
+    
+}
+
+.brand-title{
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+.navbar-links li a{
+    text-decoration: none;
+    color: rgb(5, 45, 89);
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li a:hover{
+    background-color: rgb(5, 45, 89);
+    color: rgb(253, 194, 54);
+    border-radius: 1rem;
+}
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    color: rgb(5, 45, 89);
+}
+
+.bar{
+    height: 3px;
+    width: 100%;
+    background: wheat;
+    border-radius: 10px;
+}
+
+.foto{
+    border-radius: 1rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: rgb(253, 194, 54);
+    font-family:'Special Elite';
+}
+
+
+@media (max-width: 576px){
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li{
+        text-align: center;
+    }
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+}
+
+
